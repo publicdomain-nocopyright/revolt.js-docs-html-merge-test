@@ -5,11 +5,11 @@ This will merge html pages inside classes folder of revolt.js-docs into a single
 
 1. Clone the repository
 2. Use https://pypi.org/project/htmlmerger/
+   1. `pip install htmlmerger`
+   2. ```
+      from htmlmerger import HtmlMerger
+      merger = HtmlMerger(input_directory="classes\")  # result will be in my_htmls/merged.html
+      merger.merge(clean=True)  # or clean=False to keep the individual files (default behavior)
+      ```
 
-`pip install htmlmerger`
 
-```
-from htmlmerger import HtmlMerger
-merger = HtmlMerger(input_directory="classes\")  # result will be in my_htmls/merged.html
-merger.merge(clean=True)  # or clean=False to keep the individual files (default behavior)
-```
